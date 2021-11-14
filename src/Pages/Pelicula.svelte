@@ -6,13 +6,18 @@
     const key = '?api_key=ad9a11d6e2c0d1628ab6cb4adbfeb14d&language=en-US';
     const urlFinal = url + id + key;
 
-    let pelicula = {};
+    let pelis = {};
     let generos = [];
-    onMount(async () => {
-        const res = await fetch(urlFinal);
-        pelicula = res.json();
-        generos = await pelicula.genres;
-        console.log(pelicula);
-        console.log(generos);
+    const obtenerPeli = () => {}
+    onMount(obtenerPeli = async () => {
+        try {
+            const res = await fetch(urlFinal);
+            pelis = await res.json();
+            console.log(pelis);
+            generos = pelis.genres;
+            console.log(generos);
+        } catch (e) {
+            console.log(e);
+        }
     });
 </script>
