@@ -16,5 +16,3 @@
         console.log(generos);
     });
 </script>
-
-<h1>Peliculas</h1>
