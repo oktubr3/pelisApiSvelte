@@ -8,8 +8,8 @@
 
     let pelis = {};
     let generos = [];
-    const obtenerPeli = () => {}
-    onMount(obtenerPeli = async () => {
+  
+    onMount(async () => {
         try {
             const res = await fetch(urlFinal);
             pelis = await res.json();
@@ -21,3 +21,24 @@
         }
     });
 </script>
+
+<div class="mt-6 flex flex-row">
+    <div class="flex-column">
+        <img src="http://image.tmdb.org/t/p/w500{pelis.poster_path}" alt="pelis.title">
+    </div>
+    <div class="flex-column">
+        <h1>{pelis.title}</h1>
+        <h3 class="italic">{pelis.tagline}</h3>
+            <div class="flex flex-row">
+                {#each generos as genero}
+                    <h6 class="flex-row">{genero.name}</h6>
+                {/each}
+                {#if pelis.original_language === 'en'}
+                    <h6> English </h6>
+                {:else}
+                    <h6> No es Inglés </h6>
+                {/if}
+            </div>
+        <p>{pelis.overview}</p>
+    </div>
+</div>
