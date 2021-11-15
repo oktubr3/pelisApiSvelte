@@ -18,7 +18,6 @@
       translate: ['group-hover'],
     }
   }, -->
-
   <!-- Soon review at https://moviedate.netlify.app/ -->
 
 <div>
