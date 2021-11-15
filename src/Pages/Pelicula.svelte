@@ -39,15 +39,12 @@
                 {:else}
                     <h6> No es Inglés </h6>
                 {/if}
-                <Box>
-                    <h5>
-                        Rating:
-                    </h5>
-                    <p>
-                        
-                    </p>
-                </Box>
             </div>
         <p>{pelis.overview}</p>
+        <Box>
+            <h1 class="flex-auto">
+                Rating: {pelis.vote_average}   
+            </h1>
+        </Box>
     </div>
 </div>

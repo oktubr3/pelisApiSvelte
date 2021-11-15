@@ -6,7 +6,7 @@
 
 <div class="flex flex-wrap md:flex-row">
     {#each peliculas as item}
-        <div class="m-6">
+        <div class="flex-auto m-4">
             <Card 
                 title = {item.title}
                 image = {item.poster_path}
