@@ -16,10 +16,6 @@
         throw new Error ('No hay conexión con la API');
     }
 }
-
-    
-    
-    // ad9a11d6e2c0d1628ab6cb4adbfeb14d
 </script>
 
 <h1>Peliculas Mas Populares</h1><br>
