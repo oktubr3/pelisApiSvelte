@@ -25,7 +25,7 @@
     @apply text-3xl text-blue-100 m-4;
   }
   h3 {
-    @apply text-2xl text-blue-100 m-4; 
+    @apply text-2xl text-blue-100; 
   }
   h4 {
     @apply text-xl text-blue-100 m-4;

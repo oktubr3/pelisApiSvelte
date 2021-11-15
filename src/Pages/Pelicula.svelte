@@ -1,5 +1,6 @@
 <script>
     import { onMount } from 'svelte'
+    import Box from '../Components/Box.svelte';
     export let params = {};
     let id = params.id;
     const url = 'https://api.themoviedb.org/3/movie/';
@@ -38,6 +39,14 @@
                 {:else}
                     <h6> No es Inglés </h6>
                 {/if}
+                <Box>
+                    <h5>
+                        Rating:
+                    </h5>
+                    <p>
+                        
+                    </p>
+                </Box>
             </div>
         <p>{pelis.overview}</p>
     </div>
