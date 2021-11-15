@@ -9,6 +9,15 @@
     export let id;
 
     const ver = () => dispatch('ver-mas');
+
+    const truncate = (input) => {
+        if (input.length > 140) {
+            return input.substring(0,140) + '...';
+        } else {
+            return input;
+        }
+    };
+
 </script>
 
 <!-- component -->
@@ -18,9 +27,10 @@
       translate: ['group-hover'],
     }
   }, -->
+
   <!-- Soon review at https://moviedate.netlify.app/ -->
 
-<div>
+<div on:click={ver}>
     <div class='flex w-full max-w-sm mx-auto overflow-hidden bg-gray-800 rounded-lg shadow-md'>
         <div class='w-2 bg-gray-800'></div>
 
@@ -58,10 +68,12 @@
                     <div class="flex flex-col"></div>
                     <div class="mb-2 text-xs text-gray-400">Overview:</div>
                     <p class="mb-6 text-xs text-gray-100">
-                        {synopsis}
+                        {truncate(synopsis)}
                     </p>
                 </div>
             </div>
+
+            
             <!-- <div data-countdown="2021-09-15" class="absolute inset-x-0 top-0 w-full pt-5 mx-auto text-2xl font-bold text-center text-white uppercase drop-shadow-sm">00 Days 00:00:00</div> -->
         </div>
     </div>
@@ -74,3 +86,9 @@
 
     </div>
 </div>
+
+<style>
+    h3 {
+        height: 50px;
+    }
+</style>

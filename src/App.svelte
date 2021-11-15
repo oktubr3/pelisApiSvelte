@@ -37,7 +37,7 @@
     @apply text-base text-blue-100 m-4;
   }
   p {
-    @apply text-blue-100 m-4;
+    @apply text-blue-100;
   }
   body { 
     @apply bg-gray-800;
