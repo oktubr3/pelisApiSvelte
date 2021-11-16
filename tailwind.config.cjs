@@ -7,6 +7,12 @@ const config = {
   },
 
   plugins: [],
+
+  variants: {
+    extend: {
+      translate: ['group-hover'],
+    }
+  }
 };
 
 module.exports = config;

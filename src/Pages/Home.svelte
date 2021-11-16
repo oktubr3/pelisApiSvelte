@@ -18,7 +18,7 @@
 }
 </script>
 
-<h1>Peliculas Mas Populares</h1><br>
+<h2>Popular Movies</h2><br>
 {#await promise}
     <div align="center"><Loader /></div>
 {:then peliculas}
