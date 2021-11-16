@@ -12,7 +12,7 @@
                 image = {item.poster_path}
                 synopsis = {item.overview}
                 popularity = {item.popularity}
-                releasedate = {item.release_date}
+                releasedate = {item.first_air_date}
                 id = {item.id}
                 on:ver-mas = {() => push('/Serie/' + item.id)}
             />

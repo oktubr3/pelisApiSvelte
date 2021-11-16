@@ -8,6 +8,7 @@
   export let releasedate;
   export let id;
   export let name;
+  export let first_air_date;
 
   const ver = () => dispatch("ver-mas");
 
@@ -66,10 +67,17 @@
                 <div class="popularity">{popularity}</div>
                 <div class="text-sm text-gray-400">Popularity:</div>
               </div>
+              {#if releasedate === undefined}
+              <div class="flex flex-col datos_col">
+                <div class="release">{first_air_date}</div>
+                <div class="text-sm text-gray-400">First Air Date:</div>
+              </div>
+              {:else}
               <div class="flex flex-col datos_col">
                 <div class="release">{releasedate}</div>
                 <div class="text-sm text-gray-400">Release date:</div>
               </div>
+              {/if}
               <!-- <div class="flex flex-col datos_col">
                         <div class="release">{runtime}</div>
                         <div class="text-sm text-gray-400">Runtime:</div>
@@ -78,7 +86,7 @@
             <div class="flex flex-col overview">
               <div class="flex flex-col" />
               <div class="mb-2 text-xs text-gray-400">Overview:</div>
-              <p class="mb-6 text-xs text-gray-100">
+              <p class="mb-6 text-xs text-gray-100;">
                 {truncate(synopsis)}
               </p>
             </div>
