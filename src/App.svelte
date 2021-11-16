@@ -19,22 +19,22 @@
 
 @layer base {
   h1 {
-    @apply text-4xl text-blue-100 m-4; 
+    @apply text-4xl text-blue-100; 
   }
   h2 {
-    @apply text-3xl text-blue-100 m-4;
+    @apply text-3xl text-blue-100;
   }
   h3 {
     @apply text-2xl text-blue-100; 
   }
   h4 {
-    @apply text-xl text-blue-100 m-4;
+    @apply text-xl text-blue-100;
   }
   h5 {
-    @apply text-lg text-blue-100 m-4; 
+    @apply text-lg text-blue-100; 
   }
   h6 {
-    @apply text-base text-blue-100 m-4;
+    @apply text-base text-blue-100;
   }
   p {
     @apply text-blue-100;
