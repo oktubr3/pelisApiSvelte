@@ -18,7 +18,7 @@
 }
 </script>
 
-<h2>Popular Tv Shows</h2><br>
+<h1 class="text-center mt-6 mb-3 ml-5 text-xl font-semibold text-white sm:text-2xl sm:leading-7 sm:text-white md:text-3xl">Popular TV Shows</h1>
 {#await promise}
     <div align="center"><Loader /></div>
 {:then series}

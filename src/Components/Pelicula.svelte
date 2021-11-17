@@ -37,7 +37,7 @@
                 {#if pelis.original_language === 'en'}
                     <h6> English </h6>
                 {:else}
-                    <h6> No es Inglés </h6>
+                    <h6> No English </h6>
                 {/if}
             </div>
         <p>{pelis.overview}</p>

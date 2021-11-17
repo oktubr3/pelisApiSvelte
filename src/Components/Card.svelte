@@ -44,23 +44,13 @@
           <div class="h-32" />
           <div class="space-y-6 detail_info">
             <div class="flex flex-col space-y-2 inner">
-              <!-- <a href="#" class="relative flex items-center flex-shrink-0 p-1 text-center text-white bg-red-500 rounded-full w-min group-hover:bg-red-700" data-unsp-sanitized="clean">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM9.555 7.168A1 1 0 0 0 8 8v4a1 1 0 0 0 1.555.832l3-2a1 1 0 0 0 0-1.664l-3-2z" clip-rule="evenodd"></path>
-                        </svg>
-                        <div class="absolute text-xl font-bold text-white transition duration-500 ease-in-out transform opacity-0 group-hover:opacity-100 group-hover:translate-x-16 group-hover:pr-2">Trailer</div>
-                    </a> -->
-              <h3
-                class="text-2xl font-bold text-white"
-                data-unsp-sanitized="clean"
-              >
+              <h3 class="text-2xl font-bold text-white" data-unsp-sanitized="clean">
                 {#if title === undefined}
-                {name}
+                  {name}
                 {:else}
-                {title}
+                  {title}
                 {/if}
               </h3>
-              <!-- <div class="mb-0 text-lg text-gray-400">{tagline}</div> -->
             </div>
             <div class="flex flex-row justify-between datos">
               <div class="flex flex-col datos_col">
@@ -68,35 +58,27 @@
                 <div class="popularity">{popularity}</div>
               </div>
               {#if releasedate === undefined}
-              <div class="flex flex-col datos_col">
-                <div class="text-sm text-gray-400">First Air Date:</div>
-                <div class="release">{first_air_date}</div>
-              </div>
+                <div class="flex flex-col datos_col">
+                  <div class="text-sm text-gray-400">First Air Date:</div>
+                  <div class="release">{first_air_date}</div>
+                </div>
               {:else}
-              <div class="flex flex-col datos_col">
-                <div class="text-sm text-gray-400">Release date:</div>
-                <div class="release">{releasedate}</div>
-              </div>
+                <div class="flex flex-col datos_col">
+                  <div class="text-sm text-gray-400">Release date:</div>
+                  <div class="release">{releasedate}</div>
+                </div>
               {/if}
-              <!-- <div class="flex flex-col datos_col">
-                        <div class="release">{runtime}</div>
-                        <div class="text-sm text-gray-400">Runtime:</div>
-                    </div> -->
             </div>
             <div class="flex flex-col overview">
               <div class="flex flex-col" />
               <div class="mb-2 text-xs text-gray-400">Overview:</div>
-              <p class="mb-6 text-xs text-gray-100;">
-                {#if synopsis === undefined}
-                <p class="italic">Synopsys is not available at this time.</p>
+                {#if synopsis === "" || synopsis === undefined}
+                  <h3 class=" text-2xl mb-6 italic text-opacity-25" style="text-shadow:none;">Synopsys is not available at this time.</h3>
                 {:else}
-                {truncate(synopsis)}
+                  <p class="mb-6 text-xs text-gray-100">{truncate(synopsis)}</p>
                 {/if}
-              </p>
             </div>
           </div>
-
-          <!-- <div data-countdown="2021-09-15" class="absolute inset-x-0 top-0 w-full pt-5 mx-auto text-2xl font-bold text-center text-white uppercase drop-shadow-sm">00 Days 00:00:00</div> -->
         </div>
       </div>
       <img
