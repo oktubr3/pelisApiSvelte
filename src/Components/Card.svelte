@@ -64,18 +64,18 @@
             </div>
             <div class="flex flex-row justify-between datos">
               <div class="flex flex-col datos_col">
-                <div class="popularity">{popularity}</div>
                 <div class="text-sm text-gray-400">Popularity:</div>
+                <div class="popularity">{popularity}</div>
               </div>
               {#if releasedate === undefined}
               <div class="flex flex-col datos_col">
-                <div class="release">{first_air_date}</div>
                 <div class="text-sm text-gray-400">First Air Date:</div>
+                <div class="release">{first_air_date}</div>
               </div>
               {:else}
               <div class="flex flex-col datos_col">
-                <div class="release">{releasedate}</div>
                 <div class="text-sm text-gray-400">Release date:</div>
+                <div class="release">{releasedate}</div>
               </div>
               {/if}
               <!-- <div class="flex flex-col datos_col">
@@ -87,7 +87,11 @@
               <div class="flex flex-col" />
               <div class="mb-2 text-xs text-gray-400">Overview:</div>
               <p class="mb-6 text-xs text-gray-100;">
+                {#if synopsis === undefined}
+                <p class="italic">Synopsys is not available at this time.</p>
+                {:else}
                 {truncate(synopsis)}
+                {/if}
               </p>
             </div>
           </div>

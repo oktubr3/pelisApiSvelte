@@ -40,7 +40,7 @@
     @apply text-blue-100;
   }
   body { 
-    @apply bg-gray-800;
+    background-color: #181818;
   }
 }
 </style>
