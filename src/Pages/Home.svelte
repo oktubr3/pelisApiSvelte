@@ -18,11 +18,16 @@
 }
 </script>
 
-<h1 class="text-center mt-6 mb-3 ml-5 text-xl font-semibold text-white sm:text-2xl sm:leading-7 sm:text-white md:text-3xl">Popular Movies</h1>
+
 {#await promise}
-    <div align="center"><Loader /></div>
+    <div><Loader /></div>
 {:then peliculas}
+    <h1 class="text-center mt-6 mb-3 ml-5 text-xl font-semibold text-white sm:text-2xl sm:leading-7 sm:text-white md:text-3xl">Popular Movies</h1>
     <Grid {peliculas} />
 {:catch error}
     <p>{error}</p>
 {/await}
+
+<style>
+
+</style>

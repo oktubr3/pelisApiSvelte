@@ -1,5 +1,5 @@
-<main class="container2">
-  <div class="item-0">
+<main class="container2 flex flex-row justify-center items-center">
+  <div>
     <div >
       <p class="m-6">404 error</p>
       <p class="m-6">Page not found</p>
@@ -378,21 +378,15 @@ main > div:last-child span:last-child {
   }
 
 .container2{
-  display:flex;
-  flex-direction:row;
-  flex-wrap:nowrap;
-  justify-content:center;
-  align-items:center;
-  align-content:flex-start;
-  height:100vh; /*Este valor lo puedes omitir si la altura de tu componente esta definida*/
+  height:80vh; /* Corrije lo que para mi es un error en Tailwind que no me muestra los elementos en el centro de la pantalla */
 }
 
-.item-0{
+/* .item-0{
   order:0;
   flex:0 1 auto;
   align-self:auto;
   height:auto;
   width:auto;
-}
+} */
 
 </style>

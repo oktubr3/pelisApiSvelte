@@ -1,4 +1,19 @@
+<div class="container2 flex flex-row justify-center items-center">
+  <div class="lds-ripple">
+    <div>
+
+    </div>
+    <div>
+
+    </div>
+  </div>
+</div>
+
 <style>
+  .container2{
+      height: 80vh;
+      /* Corrije lo que para mi es un error en Tailwind que no me muestra los elementos en el centro de la pantalla */
+  }
 .lds-ripple {
   display: inline-block;
   position: relative;
@@ -32,5 +47,3 @@
   }
 }
 </style>
-
-<div class="lds-ripple"><div></div><div></div></div>

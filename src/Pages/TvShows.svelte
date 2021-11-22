@@ -18,10 +18,11 @@
 }
 </script>
 
-<h1 class="text-center mt-6 mb-3 ml-5 text-xl font-semibold text-white sm:text-2xl sm:leading-7 sm:text-white md:text-3xl">Popular TV Shows</h1>
+
 {#await promise}
     <div align="center"><Loader /></div>
 {:then series}
+    <h1 class="text-center mt-6 mb-3 ml-5 text-xl font-semibold text-white sm:text-2xl sm:leading-7 sm:text-white md:text-3xl">Popular TV Shows</h1>
     <GridTvShows {series} />
 {:catch error}
     <p>{error}</p>
