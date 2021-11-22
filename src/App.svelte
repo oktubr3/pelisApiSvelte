@@ -5,7 +5,7 @@
 </script>
 
 
-<main class="">
+<main class="min-h-screen">
 	<Menu />
 	<div class="container mx-auto flex flex-row flex-wrap justify-center items-center content-center">
 		<Router {routes} />
