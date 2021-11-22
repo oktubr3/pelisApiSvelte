@@ -1,23 +1,23 @@
-<main>
-  <div>
-    <div>
-      <p m-6>404 error</p>
-      <p m-6>Page not found</p>
+<main class="container2">
+  <div class="item-0">
+    <div >
+      <p class="m-6">404 error</p>
+      <p class="m-6">Page not found</p>
     </div>
-    <svg viewBox='0 0 200 600'>
+    <svg  viewBox='0 0 200 600'>
       <polygon points='118.302698 8 59.5369448 66.7657528 186.487016 193.715824 14 366.202839 153.491505 505.694344 68.1413353 591.044514 200 591.044514 200 8'></polygon>
     </svg>
   </div>
-  <svg class='crack' viewBox='0 0 200 600'>
+  <svg  class='crack' viewBox='0 0 200 600'>
     <polyline points='118.302698 8 59.5369448 66.7657528 186.487016 193.715824 14 366.202839 153.491505 505.694344 68.1413353 591.044514'></polyline>
   </svg>
-  <div>
+  <div class="">
     <svg viewBox='0 0 200 600'>
       <polygon points='118.302698 8 59.5369448 66.7657528 186.487016 193.715824 14 366.202839 153.491505 505.694344 68.1413353 591.044514 0 591.044514 0 8'></polygon>
     </svg>
     <div>
-      <p m-6>Sorry about that!</p>
-      <p m-6>
+      <p class="m-6">Sorry about that!</p>
+      <p class="m-6">
         <a href="/">
           <b>Return Home?</b>
         </a>
@@ -376,5 +376,23 @@ main > div:last-child span:last-child {
   }
 }
   }
+
+.container2{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:nowrap;
+  justify-content:center;
+  align-items:center;
+  align-content:flex-start;
+  height:100vh; /*Este valor lo puedes omitir si la altura de tu componente esta definida*/
+}
+
+.item-0{
+  order:0;
+  flex:0 1 auto;
+  align-self:auto;
+  height:auto;
+  width:auto;
+}
 
 </style>

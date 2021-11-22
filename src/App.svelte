@@ -5,9 +5,9 @@
 </script>
 
 
-<main>
+<main class="">
 	<Menu />
-	<div class="container mx-auto">
+	<div class="container mx-auto flex flex-row flex-wrap justify-center items-center content-center">
 		<Router {routes} />
 	</div>
 </main>
