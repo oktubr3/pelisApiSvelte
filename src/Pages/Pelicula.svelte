@@ -23,14 +23,14 @@
     });
 </script>
 
-<div class="mt-6 flex flex-row">
+<div class="m-10 flex flex-row">
     <div class="flex-column">
         <img src="http://image.tmdb.org/t/p/w500{pelis.poster_path}" alt="pelis.title">
     </div>
-    <div class="flex-column">
+    <div class="flex-column m-10">
         <h1>{pelis.title}</h1>
-        <h3 class="italic">{pelis.tagline}</h3>
-            <div class="flex flex-row">
+        <h3 class="italic mt-6">{pelis.tagline}</h3>
+            <div class="flex flex-row mt-6">
                 {#each generos as genero}
                     <h6 class="flex-row">{genero.name}</h6>
                 {/each}
@@ -40,8 +40,8 @@
                     <h6> No es Inglés </h6>
                 {/if}
             </div>
-        <p>{pelis.overview}</p>
-        <Box>
+        <p class="my-6">{pelis.overview}</p>
+        <Box class="mt-6">
             <h1 class="flex-auto">
                 Rating: {pelis.vote_average}   
             </h1>
